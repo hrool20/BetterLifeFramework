@@ -7,9 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FB652BE2AC4863A08EEFC8A /* Pods_BetterLifeFrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C012F2AC7BDF58ADDD6948D9 /* Pods_BetterLifeFrameworkTests.framework */; };
 		4002F843210CDF66003735FA /* BetterLifeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4002F839210CDF66003735FA /* BetterLifeFramework.framework */; };
 		4002F848210CDF66003735FA /* BetterLifeFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002F847210CDF66003735FA /* BetterLifeFrameworkTests.swift */; };
 		4002F84A210CDF66003735FA /* BetterLifeFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 4002F83C210CDF66003735FA /* BetterLifeFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4002F855210CDFE9003735FA /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002F854210CDFE9003735FA /* Role.swift */; };
+		4002F857210CE717003735FA /* UnitOfMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002F856210CE717003735FA /* UnitOfMeasure.swift */; };
+		4002F859210CE8F5003735FA /* PrescriptionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002F858210CE8F5003735FA /* PrescriptionType.swift */; };
+		4002F85D210CEA5C003735FA /* District.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002F85C210CEA5C003735FA /* District.swift */; };
+		4002F85F210CEA73003735FA /* MedicalSpeciality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002F85E210CEA73003735FA /* MedicalSpeciality.swift */; };
+		4002F861210CEB20003735FA /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002F860210CEB20003735FA /* Device.swift */; };
+		4002F863210CEBA9003735FA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002F862210CEBA9003735FA /* User.swift */; };
+		4002F865210CF50B003735FA /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002F864210CF50B003735FA /* Address.swift */; };
+		4002F867210CF54A003735FA /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002F866210CF54A003735FA /* Doctor.swift */; };
+		40DE3794210D460D00E4B8CF /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE3793210D460D00E4B8CF /* Plan.swift */; };
+		40DE3796210D4A2B00E4B8CF /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE3795210D4A2B00E4B8CF /* Patient.swift */; };
+		40DE3798210D525A00E4B8CF /* DoctorSpeciality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE3797210D525A00E4B8CF /* DoctorSpeciality.swift */; };
+		40DE379A210D563A00E4B8CF /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE3799210D563A00E4B8CF /* Appointment.swift */; };
+		40DE379F210D586C00E4B8CF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE379E210D586C00E4B8CF /* Utils.swift */; };
+		40DE37A1210D602E00E4B8CF /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE37A0210D602E00E4B8CF /* Indicator.swift */; };
+		40DE37A3210D60C400E4B8CF /* IndicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE37A2210D60C400E4B8CF /* IndicatorType.swift */; };
+		40DE37A5210D658500E4B8CF /* IndicatorEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE37A4210D658500E4B8CF /* IndicatorEntry.swift */; };
+		40DE37A7210D66D300E4B8CF /* Membership.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE37A6210D66D300E4B8CF /* Membership.swift */; };
+		40DE37A9210D6C7600E4B8CF /* Prescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE37A8210D6C7600E4B8CF /* Prescription.swift */; };
+		40DE37AB210D7B8300E4B8CF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE37AA210D7B8300E4B8CF /* Constants.swift */; };
+		40DE37AD210D8E9A00E4B8CF /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE37AC210D8E9900E4B8CF /* Preference.swift */; };
+		40DE37B0210D947800E4B8CF /* BetterLifeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE37AF210D947800E4B8CF /* BetterLifeApi.swift */; };
+		74E35094413C4A1FC3098F9C /* Pods_BetterLifeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AFC82A0BDBC2CB779465C2 /* Pods_BetterLifeFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +47,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20F86EFFD9F1458A73B55640 /* Pods-BetterLifeFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetterLifeFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BetterLifeFramework/Pods-BetterLifeFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		4002F839210CDF66003735FA /* BetterLifeFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BetterLifeFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4002F83C210CDF66003735FA /* BetterLifeFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BetterLifeFramework.h; sourceTree = "<group>"; };
 		4002F83D210CDF66003735FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4002F842210CDF66003735FA /* BetterLifeFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetterLifeFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4002F847210CDF66003735FA /* BetterLifeFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterLifeFrameworkTests.swift; sourceTree = "<group>"; };
 		4002F849210CDF66003735FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4002F854210CDFE9003735FA /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
+		4002F856210CE717003735FA /* UnitOfMeasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitOfMeasure.swift; sourceTree = "<group>"; };
+		4002F858210CE8F5003735FA /* PrescriptionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrescriptionType.swift; sourceTree = "<group>"; };
+		4002F85C210CEA5C003735FA /* District.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = District.swift; sourceTree = "<group>"; };
+		4002F85E210CEA73003735FA /* MedicalSpeciality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalSpeciality.swift; sourceTree = "<group>"; };
+		4002F860210CEB20003735FA /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		4002F862210CEBA9003735FA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4002F864210CF50B003735FA /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		4002F866210CF54A003735FA /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
+		40DE3793210D460D00E4B8CF /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
+		40DE3795210D4A2B00E4B8CF /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		40DE3797210D525A00E4B8CF /* DoctorSpeciality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorSpeciality.swift; sourceTree = "<group>"; };
+		40DE3799210D563A00E4B8CF /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		40DE379E210D586C00E4B8CF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		40DE37A0210D602E00E4B8CF /* Indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
+		40DE37A2210D60C400E4B8CF /* IndicatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorType.swift; sourceTree = "<group>"; };
+		40DE37A4210D658500E4B8CF /* IndicatorEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorEntry.swift; sourceTree = "<group>"; };
+		40DE37A6210D66D300E4B8CF /* Membership.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Membership.swift; sourceTree = "<group>"; };
+		40DE37A8210D6C7600E4B8CF /* Prescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prescription.swift; sourceTree = "<group>"; };
+		40DE37AA210D7B8300E4B8CF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		40DE37AC210D8E9900E4B8CF /* Preference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Preference\b.swift"; sourceTree = "<group>"; };
+		40DE37AF210D947800E4B8CF /* BetterLifeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterLifeApi.swift; sourceTree = "<group>"; };
+		62388134B38E6E8E303C78B5 /* Pods-BetterLifeFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetterLifeFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-BetterLifeFramework/Pods-BetterLifeFramework.release.xcconfig"; sourceTree = "<group>"; };
+		625048E40CB3B3290FD03DC6 /* Pods-BetterLifeFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetterLifeFrameworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BetterLifeFrameworkTests/Pods-BetterLifeFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
+		73AFC82A0BDBC2CB779465C2 /* Pods_BetterLifeFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BetterLifeFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C012F2AC7BDF58ADDD6948D9 /* Pods_BetterLifeFrameworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BetterLifeFrameworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3AEB50F03B9549E8B56CA01 /* Pods-BetterLifeFrameworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetterLifeFrameworkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BetterLifeFrameworkTests/Pods-BetterLifeFrameworkTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74E35094413C4A1FC3098F9C /* Pods_BetterLifeFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +97,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				4002F843210CDF66003735FA /* BetterLifeFramework.framework in Frameworks */,
+				0FB652BE2AC4863A08EEFC8A /* Pods_BetterLifeFrameworkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01D4D99C5B26C1108E6CF001 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20F86EFFD9F1458A73B55640 /* Pods-BetterLifeFramework.debug.xcconfig */,
+				62388134B38E6E8E303C78B5 /* Pods-BetterLifeFramework.release.xcconfig */,
+				C3AEB50F03B9549E8B56CA01 /* Pods-BetterLifeFrameworkTests.debug.xcconfig */,
+				625048E40CB3B3290FD03DC6 /* Pods-BetterLifeFrameworkTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4002F82F210CDF66003735FA = {
 			isa = PBXGroup;
 			children = (
 				4002F83B210CDF66003735FA /* BetterLifeFramework */,
 				4002F846210CDF66003735FA /* BetterLifeFrameworkTests */,
 				4002F83A210CDF66003735FA /* Products */,
+				01D4D99C5B26C1108E6CF001 /* Pods */,
+				752E9063D112EA1E58C19269 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +138,9 @@
 		4002F83B210CDF66003735FA /* BetterLifeFramework */ = {
 			isa = PBXGroup;
 			children = (
+				40DE37AE210D945B00E4B8CF /* Network */,
+				40DE379D210D580700E4B8CF /* Utils */,
+				4002F853210CDFCC003735FA /* Models */,
 				4002F83C210CDF66003735FA /* BetterLifeFramework.h */,
 				4002F83D210CDF66003735FA /* Info.plist */,
 			);
@@ -84,6 +154,58 @@
 				4002F849210CDF66003735FA /* Info.plist */,
 			);
 			path = BetterLifeFrameworkTests;
+			sourceTree = "<group>";
+		};
+		4002F853210CDFCC003735FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4002F864210CF50B003735FA /* Address.swift */,
+				40DE3799210D563A00E4B8CF /* Appointment.swift */,
+				4002F860210CEB20003735FA /* Device.swift */,
+				4002F85C210CEA5C003735FA /* District.swift */,
+				4002F866210CF54A003735FA /* Doctor.swift */,
+				40DE3797210D525A00E4B8CF /* DoctorSpeciality.swift */,
+				40DE37A0210D602E00E4B8CF /* Indicator.swift */,
+				40DE37A4210D658500E4B8CF /* IndicatorEntry.swift */,
+				40DE37A2210D60C400E4B8CF /* IndicatorType.swift */,
+				4002F85E210CEA73003735FA /* MedicalSpeciality.swift */,
+				40DE37A6210D66D300E4B8CF /* Membership.swift */,
+				40DE3795210D4A2B00E4B8CF /* Patient.swift */,
+				40DE3793210D460D00E4B8CF /* Plan.swift */,
+				4002F858210CE8F5003735FA /* PrescriptionType.swift */,
+				4002F854210CDFE9003735FA /* Role.swift */,
+				4002F856210CE717003735FA /* UnitOfMeasure.swift */,
+				4002F862210CEBA9003735FA /* User.swift */,
+				40DE37A8210D6C7600E4B8CF /* Prescription.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		40DE379D210D580700E4B8CF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				40DE379E210D586C00E4B8CF /* Utils.swift */,
+				40DE37AA210D7B8300E4B8CF /* Constants.swift */,
+				40DE37AC210D8E9900E4B8CF /* Preference.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		40DE37AE210D945B00E4B8CF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				40DE37AF210D947800E4B8CF /* BetterLifeApi.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		752E9063D112EA1E58C19269 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73AFC82A0BDBC2CB779465C2 /* Pods_BetterLifeFramework.framework */,
+				C012F2AC7BDF58ADDD6948D9 /* Pods_BetterLifeFrameworkTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4002F84D210CDF66003735FA /* Build configuration list for PBXNativeTarget "BetterLifeFramework" */;
 			buildPhases = (
+				7DD8F68DE2703A3B74A397D6 /* [CP] Check Pods Manifest.lock */,
 				4002F834210CDF66003735FA /* Sources */,
 				4002F835210CDF66003735FA /* Frameworks */,
 				4002F836210CDF66003735FA /* Headers */,
@@ -122,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4002F850210CDF66003735FA /* Build configuration list for PBXNativeTarget "BetterLifeFrameworkTests" */;
 			buildPhases = (
+				6D13748E451CE370BCC2FD81 /* [CP] Check Pods Manifest.lock */,
 				4002F83E210CDF66003735FA /* Sources */,
 				4002F83F210CDF66003735FA /* Frameworks */,
 				4002F840210CDF66003735FA /* Resources */,
+				1BEA4873A474387AC82E1085 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +273,7 @@
 				TargetAttributes = {
 					4002F838210CDF66003735FA = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 					4002F841210CDF66003735FA = {
 						CreatedOnToolsVersion = 9.4;
@@ -189,11 +315,94 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1BEA4873A474387AC82E1085 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BetterLifeFrameworkTests/Pods-BetterLifeFrameworkTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BetterLifeFrameworkTests/Pods-BetterLifeFrameworkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D13748E451CE370BCC2FD81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BetterLifeFrameworkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DD8F68DE2703A3B74A397D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BetterLifeFramework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4002F834210CDF66003735FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40DE379A210D563A00E4B8CF /* Appointment.swift in Sources */,
+				4002F859210CE8F5003735FA /* PrescriptionType.swift in Sources */,
+				4002F85F210CEA73003735FA /* MedicalSpeciality.swift in Sources */,
+				40DE379F210D586C00E4B8CF /* Utils.swift in Sources */,
+				4002F855210CDFE9003735FA /* Role.swift in Sources */,
+				4002F861210CEB20003735FA /* Device.swift in Sources */,
+				40DE3794210D460D00E4B8CF /* Plan.swift in Sources */,
+				4002F857210CE717003735FA /* UnitOfMeasure.swift in Sources */,
+				4002F867210CF54A003735FA /* Doctor.swift in Sources */,
+				4002F85D210CEA5C003735FA /* District.swift in Sources */,
+				4002F865210CF50B003735FA /* Address.swift in Sources */,
+				40DE37A7210D66D300E4B8CF /* Membership.swift in Sources */,
+				40DE37AD210D8E9A00E4B8CF /* Preference.swift in Sources */,
+				40DE37A5210D658500E4B8CF /* IndicatorEntry.swift in Sources */,
+				4002F863210CEBA9003735FA /* User.swift in Sources */,
+				40DE3796210D4A2B00E4B8CF /* Patient.swift in Sources */,
+				40DE37AB210D7B8300E4B8CF /* Constants.swift in Sources */,
+				40DE37A9210D6C7600E4B8CF /* Prescription.swift in Sources */,
+				40DE37B0210D947800E4B8CF /* BetterLifeApi.swift in Sources */,
+				40DE37A3210D60C400E4B8CF /* IndicatorType.swift in Sources */,
+				40DE37A1210D602E00E4B8CF /* Indicator.swift in Sources */,
+				40DE3798210D525A00E4B8CF /* DoctorSpeciality.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +547,9 @@
 		};
 		4002F84E210CDF66003735FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20F86EFFD9F1458A73B55640 /* Pods-BetterLifeFramework.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +567,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.BetterLifeFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,7 +575,9 @@
 		};
 		4002F84F210CDF66003735FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62388134B38E6E8E303C78B5 /* Pods-BetterLifeFramework.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -388,7 +602,9 @@
 		};
 		4002F851210CDF66003735FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3AEB50F03B9549E8B56CA01 /* Pods-BetterLifeFrameworkTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TQ4Y5Q73BC;
 				INFOPLIST_FILE = BetterLifeFrameworkTests/Info.plist;
@@ -406,7 +622,9 @@
 		};
 		4002F852210CDF66003735FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 625048E40CB3B3290FD03DC6 /* Pods-BetterLifeFrameworkTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TQ4Y5Q73BC;
 				INFOPLIST_FILE = BetterLifeFrameworkTests/Info.plist;
