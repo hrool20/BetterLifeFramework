@@ -138,9 +138,9 @@
 		4002F83B210CDF66003735FA /* BetterLifeFramework */ = {
 			isa = PBXGroup;
 			children = (
+				4002F853210CDFCC003735FA /* Models */,
 				40DE37AE210D945B00E4B8CF /* Network */,
 				40DE379D210D580700E4B8CF /* Utils */,
-				4002F853210CDFCC003735FA /* Models */,
 				4002F83C210CDF66003735FA /* BetterLifeFramework.h */,
 				4002F83D210CDF66003735FA /* Info.plist */,
 			);
