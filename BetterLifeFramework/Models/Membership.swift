@@ -15,7 +15,7 @@ class Membership {
     var patient: Patient
     var referencedEmail: String
     var accessCode: String
-    var expiredAt: Date
+    var expiredAt: Date?
     var status: String
     
     public init() {
@@ -25,27 +25,27 @@ class Membership {
         self.referencedEmail = ""
         self.accessCode = ""
         self.expiredAt = Utils.getTimeNow()
-        self.status = ""
+        self.status = "ACT"
     }
     
-    public init(id: Int, doctor: Doctor, patient: Patient, referencedEmail: String, accessCode: String, expiredAt: Date, status: String) {
+    public init(id: Int, doctor: Doctor, patient: Patient, referencedEmail: String, accessCode: String?, expiredAt: Date?, status: String?) {
         self.id = id
         self.doctor = doctor
         self.patient = patient
         self.referencedEmail = referencedEmail
-        self.accessCode = accessCode
-        self.expiredAt = expiredAt
-        self.status = status
+        self.accessCode = (accessCode == nil) ? "" : accessCode!
+        self.expiredAt = (expiredAt == nil || expiredAt == Utils.getTimeNow()) ? nil : expiredAt!
+        self.status = (status == nil) ? "" : status!
     }
     
-    public init(id: Int, doctor: Doctor, patient: Patient, referencedEmail: String, accessCode: String, expiredAt: String, status: String) {
+    public init(id: Int, doctor: Doctor, patient: Patient, referencedEmail: String, accessCode: String?, expiredAt: String?, status: String?) {
         self.id = id
         self.doctor = doctor
         self.patient = patient
         self.referencedEmail = referencedEmail
-        self.accessCode = accessCode
-        self.expiredAt = Utils.convertDate(from: expiredAt)
-        self.status = status
+        self.accessCode = (accessCode == nil) ? "" : accessCode!
+        self.expiredAt = (expiredAt == nil || expiredAt == "") ? nil : Utils.convertDate(from: expiredAt!)
+        self.status = (status == nil) ? "" : status!
     }
     
     public convenience init(fromJSONObject jsonObject: JSON) {
@@ -60,8 +60,7 @@ class Membership {
     
     public static func buildCollection(fromJSONArray jsonArray: [JSON]) -> [Membership] {
         var modelList = [Membership]()
-        let count = jsonArray.count
-        for i in 0..<count {
+        for i in 0..<jsonArray.count {
             modelList.append(Membership.init(fromJSONObject: jsonArray[i]))
         }
         return modelList

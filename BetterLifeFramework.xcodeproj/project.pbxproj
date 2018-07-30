@@ -163,8 +163,8 @@
 				40DE3799210D563A00E4B8CF /* Appointment.swift */,
 				4002F860210CEB20003735FA /* Device.swift */,
 				4002F85C210CEA5C003735FA /* District.swift */,
-				4002F866210CF54A003735FA /* Doctor.swift */,
 				40DE3797210D525A00E4B8CF /* DoctorSpeciality.swift */,
+				4002F866210CF54A003735FA /* Doctor.swift */,
 				40DE37A0210D602E00E4B8CF /* Indicator.swift */,
 				40DE37A4210D658500E4B8CF /* IndicatorEntry.swift */,
 				40DE37A2210D60C400E4B8CF /* IndicatorType.swift */,
@@ -172,11 +172,11 @@
 				40DE37A6210D66D300E4B8CF /* Membership.swift */,
 				40DE3795210D4A2B00E4B8CF /* Patient.swift */,
 				40DE3793210D460D00E4B8CF /* Plan.swift */,
+				40DE37A8210D6C7600E4B8CF /* Prescription.swift */,
 				4002F858210CE8F5003735FA /* PrescriptionType.swift */,
 				4002F854210CDFE9003735FA /* Role.swift */,
 				4002F856210CE717003735FA /* UnitOfMeasure.swift */,
 				4002F862210CEBA9003735FA /* User.swift */,
-				40DE37A8210D6C7600E4B8CF /* Prescription.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,9 +184,9 @@
 		40DE379D210D580700E4B8CF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				40DE379E210D586C00E4B8CF /* Utils.swift */,
 				40DE37AA210D7B8300E4B8CF /* Constants.swift */,
 				40DE37AC210D8E9900E4B8CF /* Preference.swift */,
+				40DE379E210D586C00E4B8CF /* Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";

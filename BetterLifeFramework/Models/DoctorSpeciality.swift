@@ -34,8 +34,7 @@ class DoctorSpeciality {
     
     public static func buildCollection(fromJSONArray jsonArray: [JSON]) -> [DoctorSpeciality] {
         var modelList = [DoctorSpeciality]()
-        let count = jsonArray.count
-        for i in 0..<count {
+        for i in 0..<jsonArray.count {
             modelList.append(DoctorSpeciality.init(fromJSONObject: jsonArray[i]))
         }
         return modelList

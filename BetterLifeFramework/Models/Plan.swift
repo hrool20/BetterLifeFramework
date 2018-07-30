@@ -26,13 +26,13 @@ class Plan {
         self.price = 0.0000
     }
     
-    public init(id: Int, name: String, shortName: String, description: String, acceptedPatient: Int, price: Float) {
+    public init(id: Int, name: String?, shortName: String?, description: String?, acceptedPatient: Int?, price: Float?) {
         self.id = id
-        self.name = name
-        self.shortName = shortName
-        self.description = description
-        self.acceptedPatient = acceptedPatient
-        self.price = price
+        self.name = (name == nil) ? "" : name!
+        self.shortName = (shortName == nil) ? "" : shortName!
+        self.description = (description == nil) ? "" : description!
+        self.acceptedPatient = (acceptedPatient == nil) ? 0 : acceptedPatient!
+        self.price = (price == nil) ? 0.0000 : price!
     }
     
     public convenience init(fromJSONObject jsonObject: JSON) {
@@ -46,8 +46,7 @@ class Plan {
     
     public static func buildCollection(fromJSONArray jsonArray: [JSON]) -> [Plan] {
         var modelList = [Plan]()
-        let count = jsonArray.count
-        for i in 0..<count {
+        for i in 0..<jsonArray.count {
             modelList.append(Plan.init(fromJSONObject: jsonArray[i]))
         }
         return modelList

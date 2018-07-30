@@ -20,10 +20,10 @@ class IndicatorEntry {
         self.value = ""
     }
     
-    public init(id: Int, indicator: Indicator, value: String) {
+    public init(id: Int, indicator: Indicator, value: String?) {
         self.id = id
         self.indicator = indicator
-        self.value = value
+        self.value = (value == nil) ? "" : value!
     }
     
     public convenience init(fromJSONObject jsonObject: JSON) {
@@ -34,8 +34,7 @@ class IndicatorEntry {
     
     public static func buildCollection(fromJSONArray jsonArray: [JSON]) -> [IndicatorEntry] {
         var modelList = [IndicatorEntry]()
-        let count = jsonArray.count
-        for i in 0..<count {
+        for i in 0..<jsonArray.count {
             modelList.append(IndicatorEntry.init(fromJSONObject: jsonArray[i]))
         }
         return modelList

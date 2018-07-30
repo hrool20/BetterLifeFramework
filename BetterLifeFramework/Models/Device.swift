@@ -34,8 +34,7 @@ class Device {
     
     public static func buildCollection(fromJSONArray jsonArray: [JSON]) -> [Device] {
         var modelList = [Device]()
-        let count = jsonArray.count
-        for i in 0..<count {
+        for i in 0..<jsonArray.count {
             modelList.append(Device.init(fromJSONObject: jsonArray[i]))
         }
         return modelList

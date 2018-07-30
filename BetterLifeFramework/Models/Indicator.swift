@@ -24,12 +24,12 @@ class Indicator {
         self.frequency = ""
     }
     
-    public init(id: Int, patient: Patient, indicatorType: IndicatorType, quantity: Float, frequency: String) {
+    public init(id: Int, patient: Patient, indicatorType: IndicatorType, quantity: Float?, frequency: String?) {
         self.id = id
         self.patient = patient
         self.indicatorType = indicatorType
-        self.quantity = quantity
-        self.frequency = frequency
+        self.quantity = (quantity == nil) ? 0.0000 : quantity!
+        self.frequency = (frequency == nil) ? "" : frequency!
     }
     
     public convenience init(fromJSONObject jsonObject: JSON) {
@@ -38,5 +38,13 @@ class Indicator {
                   indicatorType: IndicatorType.init(fromJSONObject: jsonObject["indicatorType"]),
                   quantity: jsonObject["quantity"].floatValue,
                   frequency: jsonObject["frequency"].stringValue)
+    }
+    
+    public static func buildCollection(fromJSONArray jsonArray: [JSON]) -> [Indicator] {
+        var modelList = [Indicator]()
+        for i in 0..<jsonArray.count {
+            modelList.append(Indicator.init(fromJSONObject: jsonArray[i]))
+        }
+        return modelList
     }
 }

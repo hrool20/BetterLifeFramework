@@ -23,16 +23,16 @@ class Doctor {
         self.plan = Plan.init()
         self.address = Address.init()
         self.doctorIdentification = ""
-        self.status = ""
+        self.status = "ACT"
     }
     
-    public init(id: Int, user: User, plan: Plan, address: Address, doctorIdentification: String, status: String) {
+    public init(id: Int, user: User, plan: Plan, address: Address?, doctorIdentification: String, status: String?) {
         self.id = id
         self.user = user
         self.plan = plan
-        self.address = address
+        self.address = (address == nil) ? Address.init() : address!
         self.doctorIdentification = doctorIdentification
-        self.status = status
+        self.status = (status == nil) ? "" : status!
     }
     
     public convenience init(fromJSONObject jsonObject: JSON) {
@@ -46,8 +46,7 @@ class Doctor {
     
     public static func buildCollection(fromJSONArray jsonArray: [JSON]) -> [Doctor] {
         var modelList = [Doctor]()
-        let count = jsonArray.count
-        for i in 0..<count {
+        for i in 0..<jsonArray.count {
             modelList.append(Doctor.init(fromJSONObject: jsonArray[i]))
         }
         return modelList

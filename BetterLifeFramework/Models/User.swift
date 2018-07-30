@@ -34,17 +34,17 @@ class User {
         self.status = ""
     }
     
-    public init(id: Int, role: Role, email: String, password: String, fullName: String, lastName: String, phoneNumber: String, profilePicture: String, lastIPConnection: String, status: String) {
+    public init(id: Int, role: Role, email: String, password: String, fullName: String, lastName: String, phoneNumber: String?, profilePicture: String?, lastIPConnection: String?, status: String?) {
         self.id = id
         self.role = role
         self.email = email
         self.password = password
         self.fullName = fullName
         self.lastName = lastName
-        self.phoneNumber = phoneNumber
-        self.profilePicture = profilePicture
-        self.lastIPConnection = lastIPConnection
-        self.status = status
+        self.phoneNumber = (phoneNumber == nil) ? "" : phoneNumber!
+        self.profilePicture = (profilePicture == nil) ? "" : profilePicture!
+        self.lastIPConnection = (lastIPConnection == nil) ? "" : lastIPConnection!
+        self.status = (status == nil) ? "" : status!
     }
     
     public convenience init(fromJSONObject jsonObject: JSON) {
@@ -62,8 +62,7 @@ class User {
     
     public static func buildCollection(fromJSONArray jsonArray: [JSON]) -> [User] {
         var modelList = [User]()
-        let count = jsonArray.count
-        for i in 0..<count {
+        for i in 0..<jsonArray.count {
             modelList.append(User.init(fromJSONObject: jsonArray[i]))
         }
         return modelList

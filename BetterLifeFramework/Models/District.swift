@@ -34,8 +34,7 @@ class District {
     
     public static func buildCollection(fromJSONArray jsonArray: [JSON]) -> [District] {
         var modelList = [District]()
-        let count = jsonArray.count
-        for i in 0..<count {
+        for i in 0..<jsonArray.count {
             modelList.append(District.init(fromJSONObject: jsonArray[i]))
         }
         return modelList

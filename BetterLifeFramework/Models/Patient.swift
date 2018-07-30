@@ -29,19 +29,19 @@ class Patient {
         self.weight = 0.0000
         self.sex = ""
         self.height = 0.0000
-        self.status = ""
+        self.status = "ACT"
     }
     
-    public init(id: Int, user: User, plan: Plan, age: Int, bloodType: String, weight: Float, sex: String, height: Float, status: String) {
+    public init(id: Int, user: User, plan: Plan, age: Int, bloodType: String?, weight: Float?, sex: String?, height: Float?, status: String?) {
         self.id = id
         self.user = user
         self.plan = plan
         self.age = age
-        self.bloodType = bloodType
-        self.weight = weight
-        self.sex = sex
-        self.height = height
-        self.status = status
+        self.bloodType = (bloodType == nil) ? "" : bloodType!
+        self.weight = (weight == nil) ? 0.0000 : weight!
+        self.sex = (sex == nil) ? "" : sex!
+        self.height = (height == nil) ? 0.0000 : height!
+        self.status = (status == nil) ? "" : status!
     }
     
     public convenience init(fromJSONObject jsonObject: JSON) {
@@ -58,8 +58,7 @@ class Patient {
     
     public static func buildCollection(fromJSONArray jsonArray: [JSON]) -> [Patient] {
         var modelList = [Patient]()
-        let count = jsonArray.count
-        for i in 0..<count {
+        for i in 0..<jsonArray.count {
             modelList.append(Patient.init(fromJSONObject: jsonArray[i]))
         }
         return modelList

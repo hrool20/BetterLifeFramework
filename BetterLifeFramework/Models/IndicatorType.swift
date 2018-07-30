@@ -22,11 +22,11 @@ class IndicatorType {
         self.shortName = ""
     }
     
-    public init(id: Int, unitOfMeasure: UnitOfMeasure, name: String, shortName: String) {
+    public init(id: Int, unitOfMeasure: UnitOfMeasure, name: String?, shortName: String?) {
         self.id = id
         self.unitOfMeasure = unitOfMeasure
-        self.name = name
-        self.shortName = shortName
+        self.name = (name == nil) ? "" : name!
+        self.shortName = (shortName == nil) ? "" : shortName!
     }
     
     public convenience init(fromJSONObject jsonObject: JSON) {
@@ -38,8 +38,7 @@ class IndicatorType {
     
     public static func buildCollection(fromJSONArray jsonArray: [JSON]) -> [IndicatorType] {
         var modelList = [IndicatorType]()
-        let count = jsonArray.count
-        for i in 0..<count {
+        for i in 0..<jsonArray.count {
             modelList.append(IndicatorType.init(fromJSONObject: jsonArray[i]))
         }
         return modelList
