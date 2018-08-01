@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-class PrescriptionType {
+public class PrescriptionType {
     var id: Int
     var name: String
     var shortName: String

@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-class IndicatorType {
+public class IndicatorType {
     var id: Int
     var unitOfMeasure: UnitOfMeasure
     var name: String

@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-class Role {
+public class Role {
     var id: Int
     var name: String
     var shortName: String

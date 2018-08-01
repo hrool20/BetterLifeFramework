@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BetterLifeApi {
+public class BetterLifeApi {
     private static let baseUrl: String = "https://followlife.herokuapp.com"
     
     public static var doctorsUrl: String {

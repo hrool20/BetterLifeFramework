@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-class Patient {
+public class Patient {
     var id: Int
     var user: User
     var plan: Plan

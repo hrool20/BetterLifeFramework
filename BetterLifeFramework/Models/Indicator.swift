@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-class Indicator {
+public class Indicator {
     var id: Int
     var patient: Patient
     var indicatorType: IndicatorType

@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-class UnitOfMeasure {
+public class UnitOfMeasure {
     var id: Int
     var name: String
     var shortName: String

@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-class Device {
+public class Device {
     var id: Int
     var user: User
     var ip: String

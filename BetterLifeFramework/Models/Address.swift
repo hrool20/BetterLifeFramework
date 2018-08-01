@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-class Address {
+public class Address {
     var id: Int
     var district: District
     var street: String

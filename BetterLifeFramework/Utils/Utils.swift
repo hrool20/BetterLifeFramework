@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Utils {
+public class Utils {
     // MARK: Dateformatter
     private static var dateFormatter: DateFormatter = DateFormatter()
     

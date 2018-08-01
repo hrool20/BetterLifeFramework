@@ -8,15 +8,16 @@
 
 import Foundation
 
-class Constants {
+public class Constants {
     public struct keys {
         static var token: String = "token"
         static var userId: String = "userId"
         static var patientId: String = "patientId"
         static var doctorId: String = "doctorId"
         static var appointmentId: String = "appointmentId"
+        static var prescriptionId: String = "prescriptionId"
         static var email: String = "email"
         static var address: String = "address"
     }
-    static var header: String = "header"
+    public static var header: String = "header"
 }

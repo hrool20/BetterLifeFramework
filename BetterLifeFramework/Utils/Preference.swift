@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Preferences {
+public class Preferences {
     private static let preferences: UserDefaults = UserDefaults.standard
     
     public static func saveData(key: String, value: String) {
