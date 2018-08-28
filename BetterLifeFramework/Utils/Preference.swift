@@ -22,7 +22,7 @@ public class Preferences {
     }
     
     public static func retreiveData(key: String) -> String {
-        guard let value = preferences.string(forKey: key) else {
+        guard let value: String = preferences.string(forKey: key) else {
             return ""
         }
         return value
@@ -34,5 +34,17 @@ public class Preferences {
         value = preferences.integer(forKey: key)
         
         return value
+    }
+    
+    func addIconToTextField(textField: UITextField, icon: UIImage, widthMargin: CGFloat, heightMargin: CGFloat, padding: Int) {
+        let iconWidth: CGFloat = icon.size.width - CGFloat(padding)
+        let iconHeight: CGFloat = icon.size.height - CGFloat(padding)
+        
+        let leftImageView = UIImageView(frame: CGRect(x: widthMargin, y: heightMargin, width: iconWidth, height: iconHeight))
+        leftImageView.image = icon
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: iconWidth + widthMargin, height: iconHeight + heightMargin))
+        view.addSubview(leftImageView)
+        textField.leftView = view
+        textField.leftViewMode = .always
     }
 }
